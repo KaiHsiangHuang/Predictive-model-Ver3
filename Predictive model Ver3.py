@@ -39,7 +39,7 @@ st.markdown("""
 # ============================================================================
 
 class PrebookingAnalyzer:
-    """Analyzes relationship between prebookings and final demand"""
+    """Analyses relationship between prebookings and final demand"""
     
     def __init__(self):
         self.prebooking_models = {}  # Store models by day of week
@@ -47,10 +47,10 @@ class PrebookingAnalyzer:
         self.day_names = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
     
     def analyze_prebooking_patterns(self, historical_data):
-        """Analyze prebooking patterns from historical data"""
+        """Analyse prebooking patterns from historical data"""
         
         # First, create prebooking profiles
-        st.write("🔍 Analyzing prebooking patterns...")
+        st.write("🔍 Analysing prebooking patterns...")
         
         # For each booking, calculate days in advance
         historical_data['days_in_advance'] = (
